@@ -1,0 +1,43 @@
+{
+  "name": "node-api-surf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:functional": "jest --projects ./test --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jljunior3/node-api-surf.git"
+  },
+  "keywords": [],
+  "author": "Júnior Souto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jljunior3/node-api-surf/issues"
+  },
+  "homepage": "https://github.com/jljunior3/node-api-surf#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.14.37",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.4",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
